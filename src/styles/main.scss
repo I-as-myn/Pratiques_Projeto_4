@@ -1,5 +1,99 @@
-$bgColor:red;
+@use 'variaveis';
+@use 'hero';
+
+//importação fontes que não sejam do google fonts
+@font-face {
+    font-family: Netflix;
+    src: url(../../Assets/Fontes/NetflixSans-Regular.otf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Netflix;
+    src: url(../../Assets/Fontes/NetflixSans-Bold.otf);
+    font-weight: 700;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Netflix, sans-serif;
+    list-style: none;
+}
 
 body{
-    background-color: $bgColor;
+    background-color: variaveis.$corDeFundo;
+}
+
+@mixin text($fontSize:16px){
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variaveis.$corTextoSecundario;
+}
+
+@mixin title($fontSize:40px){
+    @include text($fontSize);
+    color: variaveis.$corTextoPrincipal;
+}
+
+.text--big {
+    @include text(18px);
+
+    @media (max-width:768px) {
+        @include text(15px);
+        }
+}
+
+.text {
+    @include text;
+
+    @media (max-width:768px) {
+        @include text(14px);
+        }
+}
+
+.text--small {
+    @include text(14px);
+    @media (max-width:768px) {
+        @include text(11px);
+        }
+}
+
+.text--smaller {
+    @include text(12px);
+    @media (max-width:768px) {
+        @include text(11px);
+        }
+}
+
+
+.title--big {
+    @include title(44px);
+
+    @media (max-width:768px) {
+        @include title(26px);
+        }
+}
+
+.title {
+    @include title;
+
+    @media (max-width:768px) {
+        @include title(24px);
+        }
+}
+
+.title--small{
+    @include title(28px);
+
+    @media (max-width:768px) {
+        @include title(22px);
+        }
+}
+
+.link-text{
+    @include text(18px);
+    color: variaveis.$corTextoSecundario;
+    text-decoration: underline;
 }

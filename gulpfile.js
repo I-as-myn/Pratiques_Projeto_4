@@ -10,12 +10,11 @@ function scripts (){
 }
 
 //função que cria a pasta dist (pasta disponibilizada para o publico) e envia a pasta styles para  dist
-function styles() { 
+function styles() {
     return gulp.src('./src/styles/*.scss')
     .pipe(sass({ outputStyle:'compressed' }))
     .pipe(gulp.dest('./dist/css'));
 }
-
 
 function images() {
     return gulp.src('./src/images/**/*')
