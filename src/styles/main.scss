@@ -1,11 +1,17 @@
 @use 'variaveis';
 @use 'hero';
+@use 'bridge-section';
+@use 'info';
+@use 'shows';
+@use 'footer';
+@use 'header';
+
 
 //importação fontes que não sejam do google fonts
 @font-face {
     font-family: Netflix;
     src: url(../../Assets/Fontes/NetflixSans-Regular.otf);
-    font-weight: 400;
+    font-weight: 300;
 }
 
 @font-face {
@@ -92,8 +98,51 @@ body{
         }
 }
 
+
+
 .link-text{
     @include text(18px);
     color: variaveis.$corTextoSecundario;
     text-decoration: underline;
+}
+
+.button{
+    display: inline-block;
+    padding: 9px 24px;
+    border:0;
+    border-radius: 2px;
+    background-color: variaveis.$corDeFundoBotaoPrimario;
+    color:variaveis.$corTextoPrincipal;
+    cursor:pointer;
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: auto;
+    
+
+    &:hover {
+        background-color: variaveis.$corDeFundoBotaoHover;
+    }
+
+    &--dark{
+        background-color: rgba(variaveis.$corDeFundoBotaoDark, 0.8) ;
+        border: 0.5px solid variaveis.$corTextoPrincipal;
+        border-color:  variaveis.$corTextoPrincipal;
+
+        &:hover{
+            background-color: variaveis.$corTextoSecundario;
+            color: variaveis.$corDeFundo;
+        }
+    }
+
+    &--secondary{
+        background-color: variaveis.$corDeFundoBotaoPrimario;
+        border-color: variaveis.$corDeFundoBotaoHover;
+
+        &:hover{
+            background-color: lighten(variaveis.$corDeFundoBotaoPrimario, 3%);
+        }
+    }
+
+
 }

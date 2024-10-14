@@ -1,0 +1,54 @@
+@use 'variaveis';
+
+.info{
+    padding: 2vw 5.6vw;
+    
+
+    &__netflix{
+        margin-top: 20px;
+        padding-bottom: 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap:24px;
+
+        @media (max-width:768px) {
+            grid-template-columns: 1fr 1fr 1fr;
+            }
+
+
+        &__item{
+            text-align: left;
+            
+
+            span{
+                color:variaveis.$corTextoPrincipal;
+            }
+        }
+    }
+
+    h4{
+        margin-top: 24px;
+    }
+
+    &__movie{
+        margin-top: 20px;
+        padding-bottom: 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap:24px;
+
+        @media (max-width:768px) {
+            grid-template-columns: 1fr 1fr 1fr;
+            }
+        
+        &__item{
+            text-align: left;
+            
+            span{
+                color:variaveis.$corTextoPrincipal;
+            }
+    }}
+}
+
+
+

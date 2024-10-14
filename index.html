@@ -7,6 +7,22 @@
     <link rel="stylesheet" href="./dist/css/main.css">
 </head>
 <body>
+    <header>
+        <header class="header">
+            <div class="header__container">
+                <h1>
+                    <img class="header__logo" src="./dist/images/netflix_logo.png" alt="Netflix">
+                </h1>
+                <ul class="header__links">
+                    <li class="header__links__item">
+                        <a class="button button--secondary" href="#">Assine agora</a>
+                    </li>
+                    <li class="header__links__item">
+                        <a class="button button--dark" href="#">Entrar</a>
+                    </li>
+                </ul>
+            </div>
+    </header>
     <section class="hero">
         <div class="hero__content">
             <div class="hero__content__brand">
@@ -21,7 +37,7 @@
             </ul>
             <p class="hero__content__text">A lealdade de um policial é testada durante uma missão secreta para investigar um grupo de pilotos de corridas de rua suspeitos de organizar assaltos em alta velocidade.</p>
 
-            <p class="hero__content__text"><span class="text">Estrelando: </span>Vin Diesel, Paul Walker, Michelle Rodriguez</p>
+            <p class="hero__content__text"><span class="text">Estrelando: </a>Vin Diesel, Paul Walker, Michelle Rodriguez</p>
         </div>
         <div class="hero__hook">
             <img src="./src/images/netflix_icon.png" alt="Netflix">
@@ -29,6 +45,188 @@
             <button class="button">Acessar agora</button>
         </div>
     </section>
+    <section class="bridge-section">
+        <p class="text">Vin Diesel, Paul Walker e Michelle Rodriguez estrelam este filme de ação que deu início à consagrada franquia.</p>
+    </section>
+    <section class="info">
+        <h3 class="title--small">Mais detalhes</h3>
+        <ul class="info__netflix">
+            <li class="info__netflix__item">
+                <h4 class="text--small">Assista offline</h4>
+                <span class="text--small"> Baixe e assista onde estiver.</span>
+            </li>
+            <li class="info__netflix__item">
+                <h4 class="text--small">Gêneros</h4>
+                <span class="text--small">Filmes de ação e aventura, </span>
+                <span class="text--small">Filmes policiais, </span>
+                <span class="text--small">Filmes policiais de ação e aventura </span>
+            </li>
+            <li class="info__netflix__item">
+                <h4 class="text--small">Este filme é ... </h4>
+                <span class="text--small">Empolgante </span>
+            </li>
+            <li class="info__netflix__item">
+                <h4 class="text--small">Idioma</h4>
+                <span class="text--small">German, English - Audio Description, English [Original], French, Italian, Portuguese (Brazil)</span>
+            </li>
+            <li class="info__netflix__item">
+                <h4 class="text--small">Legendas</h4>
+                <span class="text--small">German, English, French, Italian, Portuguese (Brazil)</span>
+            </li>
+        </ul>
+        <h4 class="text--small">Elenco</h4>
+        <ul class="info__movie">
+            <li class="info__movie__item">
+                <span class="text--small">Vin Diesel</span></li>
+            <li class="info__movie__item">
+                <span class="text--small">Paul Walker</span></li>
+            <li class="info__movie__item">
+                <span class="text--small">Michelle Rodriguez</span></li>
+            <li class="info__movie__item">
+                <span class="text--small">Jordana Brewster</span></li>
+            <li class="info__movie__item">
+                <span class="text--small">Matt Schulze</span></li>
+            <li class="info__movie__item">
+                <span class="text--small">Johnny Strong</span></li>
+            <li class="info__movie__item">
+                <span class="text--small">Rick Yune</span></li>
+            <li class="info__movie__item">
+                <span class="text--small">Ted Levine</span></li>
+            <li class="info__movie__item">
+                <span class="text--small">Chad Lindberg</span></li>
+            <li class="info__movie__item">
+                <span class="text--small">Ja Rule</span></li>
+        </ul>
+    </section>
+    <section class="shows">
+        <nav class="shows__tabs">
+            <button data-tab-button="franquia" class="shows__tabs__button shows__tabs__button--is-active">
+                Explore a franquia
+            </button>
+            <button data-tab-button="similares" class="shows__tabs__button">
+                Títulos similares
+            </button>
+        </nav>
+        <ul data-tab-id="franquia" class="shows__list shows__list--is-active">
+            <li class="shows__list__item">
+                <img src="./dist/images/saga/velozes_E_Furiosos.jpg" alt="Velozes e Furiosos 1">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/saga/Velozes_E_Furiosos_2.jpg" alt="Velozes e Furiosos 2">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/saga/Velozes_E_Furiosos_3.jpg" alt="Velozes e Furiosos 3">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/saga/Velozes_E_Furiosos_4.jpg" alt="Velozes e Furiosos 4">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/saga/velozes_E_Furiosos_5.jpg" alt="Velozes e Furiosos 5">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/saga/velozes_E_Furiosos_6.jpg" alt="Velozes e Furiosos 6">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/saga/velozes_E_Furiosos_7.jpg" alt="Velozes e Furiosos 7">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/saga/Velozes_E_Furiosos_Hobbs_&_Shaw.jpg" alt="Velozes e Furiosos - Hobb & Shaw">
+            </li>
+        </ul>
+        <ul data-tab-id="similares" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./dist/images/titulos_Semelhantes/Adrenalina.jpg" alt="Adrenalina">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/titulos_Semelhantes/Badboys_2.jpg" alt="Badboys 2">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/titulos_Semelhantes/duelo_No_Asfalto.jpg" alt="Duelo no asfalto">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/titulos_Semelhantes/em_Ritmo_De_Fuga.jpg" alt="em ritmo de fuga">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/titulos_Semelhantes/motoqueiro_fantasma.jpg" alt="motoqueiro fantasma">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/titulos_Semelhantes/top_Gun.jpg" alt="top gun">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/titulos_Semelhantes/Transformers.jpg" alt="Transformers">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/titulos_Semelhantes/Triplo_X.jpg" alt="triplo x">
+            </li>
+        </ul>
+    </section>
+    <Footer class="footer">
+        <div class="footer__container">
+            <h4 class="text--small">Dúvidas? Ligue 0800 591 2876</h4>
+        <ul class="footer__links">
+            <li class="footer__links__item">
+                <a href="#" class="text--smaller">Perguntas Frequentes</a>
+            </li>
+            <li class="footer__links__item">
+                <a href="#" class="text--smaller">Central de Ajuda</a>
+            </li>
+            <li class="footer__links__item">
+                <a href="#" class="text--smaller">Conta</a>
+            </li>
+            <li class="footer__links__item">
+                <a href="#" class="text--smaller">Media Center</a>
+            </li>
+            <li class="footer__links__item">
+                <a href="#" class="text--smaller">Relações com investidores</a>
+            </li>
+            <li class="footer__links__item">
+                <a href="#" class="text--smaller">Carreiras</a>
+            </li>
+            <li class="footer__links__item">
+                <a href="#" class="text--smaller">Resgatar cartão pré-pago</a>
+            </li>
+            <li class="footer__links__item">
+                <a href="#" class="text--smaller">Comprar cartão pré-pago</a>
+            </li>
+            <li class="footer__links__item">
+                <a href="#" class="text--smaller">Formas de assistir</a>
+            </li>
+            <li class="footer__links__item">
+                <a href="#" class="text--smaller">Termos de uso</a>
+            </li>
+            <li class="footer__links__item">
+                <a href="#" class="text--smaller">Privacidade</a>
+            </li>
+            <li class="footer__links__item">
+                <a href="#" class="text--smaller">Preferências de cookies</a>
+            </li>
+            <li class="footer__links__item">
+                <a href="#" class="text--smaller">Informações corporativas</a>
+            </li>
+            <li class="footer__links__item">
+                <a href="#" class="text--smaller">Entre em contato</a>
+            </li>
+            <li class="footer__links__item">
+                <a href="#" class="text--smaller">Teste de velocidade</a>
+            </li>
+            <li class="footer__links__item">
+                <a href="#" class="text--smaller">Avisos legais</a>
+            </li>
+            <li class="footer__links__item">
+                <a href="#" class="text--smaller">Só na netflix</a>
+            </li>
+        </ul>
+        <div class="language-selector">
+            <img src="./dist/images/icones/globe.svg" alt="Globo do mundo">
+            <select>
+            <option>English</option>
+            <option selected>Português</option>
+            <option>Español</option>
+            </select>
+        </div>
+        </div>
 
+    </Footer>
+    <script src="./dist/js/main.js"></script>
 </body>
 </html>
